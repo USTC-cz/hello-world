@@ -14,7 +14,7 @@ void hello()
 void add()
 {
     int a,b;
-    scaf("%d %d".&a &b);
+    scanf("%d %d",&a,&b);
     printf("%d\n",a+b);
 }
 void oppnum()
@@ -23,16 +23,16 @@ void oppnum()
     scanf("%d",&a);
     printf("%d\n",-a);	
 }
-void compare();
+void compare()
 {
     int a,b;
-    scanf("%d %d",&a &b);
+    scanf("%d %d",&a,&b);
     if(a<b)
-	printf("a<b\n");
+	printf("%d<%d\n",a,b);
     else if(a=b)
-	printf("a=b\n");
-    else
-	printf("a>b\n");
+	printf("%d=%d\n",a,b);
+    else if(a>b)
+	printf("%d>%d\n",a,b);
 }
 
 
@@ -48,8 +48,8 @@ int main()
 	    compare();
         else if(strcmp(cmd,"oppnum")==0)
 	    oppnum();
-	else if(strcmp(cmd,"time")==0)
-	    time();
+	else if(strcmp(cmd,"showTime")==0)
+	    time(0);
 	else if(strcmp(cmd,"hello")==0)
 	    hello();
 	else if(strcmp(cmd,"add")==0)
