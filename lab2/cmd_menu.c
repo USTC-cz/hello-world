@@ -4,31 +4,31 @@
 
 void help()
 {
-    printf("enter help [-commandname] for details");
+    printf("enter help [-commandname] for details\n");
 }
 void hello()
 {
-    printf("hello,user");
+    printf("hello,user\n");
 }
 void add()
 {
     int a,b;
-    printf("%d+%d",a,b);
+    printf("%d\n",a+b);
 }
 void oppnum()
 {
     int a;
-    printf("%d",-a);	
+    printf("%d\n",-a);	
 }
 void compare();
 {
     int a,b;
     if(a<b)
-	printf("a<b");
+	printf("a<b\n");
     else if(a=b)
-	printf("a=b");
+	printf("a=b\n");
     else
-	printf("a>b");
+	printf("a>b\n");
 }
 
 
@@ -41,9 +41,9 @@ int main()
 	if(strcmp(cmd,"help")==0)
 	    help();
 	else if(strcmp(cmd,"compare")==0)
-	    abs();
+	    compare();
         else if(strcmp(cmd,"oppnum")==0)
-	    pow();
+	    oppnum();
 	else if(strcmp(cmd,"time")==0)
 	    time();
 	else if(strcmp(cmd,"hello")==0)
@@ -53,7 +53,7 @@ int main()
 	else if(strcmp(cmd,"exit")==0)
             exit(0); 
 	else 
-	    printf("commond not found");		  
+	    printf("commond not found\n");		  
      }
     return 0;
 }
