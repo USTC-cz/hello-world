@@ -1,6 +1,7 @@
 #include<stdio.h>
 #include<stdlib.h>
 #include<string.h>
+#include<time.h>
 
 void help()
 {
@@ -13,16 +14,19 @@ void hello()
 void add()
 {
     int a,b;
+    scaf("%d %d".&a &b);
     printf("%d\n",a+b);
 }
 void oppnum()
 {
     int a;
+    scanf("%d",&a);
     printf("%d\n",-a);	
 }
 void compare();
 {
     int a,b;
+    scanf("%d %d",&a &b);
     if(a<b)
 	printf("a<b\n");
     else if(a=b)
