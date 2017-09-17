@@ -29,12 +29,15 @@ void compare()
     scanf("%d %d",&a,&b);
     if(a<b)
 	printf("%d<%d\n",a,b);
-    else if(a=b)
+    else if(a==b)
 	printf("%d=%d\n",a,b);
     else if(a>b)
 	printf("%d>%d\n",a,b);
 }
-
+void PI()
+{
+    printf("3.14\n");
+}
 
 int main()
 {
@@ -48,8 +51,8 @@ int main()
 	    compare();
         else if(strcmp(cmd,"oppnum")==0)
 	    oppnum();
-	else if(strcmp(cmd,"showTime")==0)
-	    time(0);
+	else if(strcmp(cmd,"PI")==0)
+	    PI();
 	else if(strcmp(cmd,"hello")==0)
 	    hello();
 	else if(strcmp(cmd,"add")==0)
