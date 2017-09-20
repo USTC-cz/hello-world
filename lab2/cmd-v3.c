@@ -1,32 +1,33 @@
+#include<stdlib.h>
 #include<stdio.h>
 #include<string.h>
 #include<stdbool.h>
 
-enum cmdtpye {help,compare,oppnum,PI,hello,add,exit};
-const char *cmds[] = { "help","compare","oppnum","PI","hello","add","exit" };
+enum cmdtype {help,compare,oppnum,PI,hello,add,quit};
+const char *cmds[] = { "help","compare","oppnum","PI","hello","add","quit" };
 
 
-void help()
+void helpf()
 {
     printf("enter help [-commandname] for details\n");
 }
-void hello()
+void hellof()
 {
     printf("hello,user\n");
 }
-void add()
+void addf()
 {
     int a,b;
     scanf("%d %d",&a,&b);
     printf("%d\n",a+b);
 }
-void oppnum()
+void oppnumf()
 {
     int a;
     scanf("%d",&a);
     printf("%d\n",-a);	
 }
-void compare()
+void comparef()
 {
     int a,b;
     scanf("%d %d",&a,&b);
@@ -37,7 +38,7 @@ void compare()
     else if(a>b)
 	printf("%d>%d\n",a,b);
 }
-void PI()
+void PIf()
 {
     printf("3.14\n");
 }
@@ -52,7 +53,7 @@ int main(void)
 
 	while (1)
 	{
-		for (cmd = help; cmd <= exit; cmd++)
+		for (cmd = help; cmd <= quit; cmd++)
 		{
 			if (strcmp(choice, cmds[cmd]) == 0)
 			{
@@ -63,19 +64,19 @@ int main(void)
 		if (cmd_is_found)
 			switch (cmd)
 			{
-			case help: help();
+			case help: helpf();
 				break;
-			case compare:compare();
+			case compare:comparef();
 				break;
-			case oppnum:oppnum();
+			case oppnum:oppnumf();
 				break;
-			case PI:PI();
+			case PI:PIf();
 				break;
-			case hello:hello();
+			case hello:hellof();
 				break;
-			case add:add();
+			case add:addf();
 				break;
-			case exit:exit(0);
+			case quit:exit(0);
 				break;
 			}
 		else
