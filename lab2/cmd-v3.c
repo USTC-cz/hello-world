@@ -51,7 +51,7 @@ int main(void)
 	enum cmdtype cmd;
 	bool cmd_is_found=false;
 
-	while (1)
+	while (gets(choice)!=NULL)
 	{
 		for (cmd = help; cmd <= quit; cmd++)
 		{
