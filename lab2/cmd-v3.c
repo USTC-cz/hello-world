@@ -2,10 +2,9 @@
 #include<string.h>
 #include<stdbool.h>
 
-enum spectrum {};
-const char *colors[] = { " };
+enum cmdtpye {help,compare,oppnum,PI,hello,add,exit};
+const char *cmds[] = { "help","compare","oppnum","PI","hello","add","exit" };
 
-#define LEN 30
 
 void help()
 {
@@ -43,46 +42,48 @@ void PI()
     printf("3.14\n");
 }
 
-
+			
+			
 int main(void)
 {
-	char choice[LEN];
-	enum spectrum color;
-	bool color_is_found=false;
+	char choice[128];
+	enum cmdtype cmd;
+	bool cmd_is_found=false;
 
-	puts("enter a color(empty line to quit)：");
-	while (gets(choice) != NULL && choice[0] != '\0')
+	while (1)
 	{
-		for (color = red; color <= violet; color++)
+		for (cmd = help; cmd <= exit; cmd++)
 		{
-			if (strcmp(choice, colors[color]) == 0)
+			if (strcmp(choice, cmds[cmd]) == 0)
 			{
-				color_is_found = true;
+				cmd_is_found = true;
 				break;
 			}
 		}
-		if (color_is_found)
-			switch (color)
+		if (cmd_is_found)
+			switch (cmd)
 			{
-			case red:puts("rose are red.");
+			case help: help();
 				break;
-			case orange:puts("poppies are orange.");
+			case compare:compare();
 				break;
-			case yellow:puts("sunflowers are yellow.");
+			case oppnum:oppnum();
 				break;
-			case green:puts("grass is green.");
+			case PI:PI();
 				break;
-			case blue:puts("bluebells are blue.");
+			case hello:hello();
 				break;
-			case violet:puts("violets are violet.");
+			case add:add();
+				break;
+			case exit:exit(0);
 				break;
 			}
 		else
-			printf("dont't know the color %s.\n",choice);
-		color_is_found = false;
-		puts("next color,please(empty line to quit):");
+			printf("commond not found\n");
+		cmd_is_found = false;
+		
 	}
-	puts("goodbey");
+	
 
 	return 0;
 }
