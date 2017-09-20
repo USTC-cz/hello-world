@@ -2,10 +2,47 @@
 #include<string.h>
 #include<stdbool.h>
 
-enum spectrum {red,orange,yellow,green,blue,violet};
-const char *colors[] = { "red","orange","yellow","green","blue","violet" };
+enum spectrum {};
+const char *colors[] = { " };
 
 #define LEN 30
+
+void help()
+{
+    printf("enter help [-commandname] for details\n");
+}
+void hello()
+{
+    printf("hello,user\n");
+}
+void add()
+{
+    int a,b;
+    scanf("%d %d",&a,&b);
+    printf("%d\n",a+b);
+}
+void oppnum()
+{
+    int a;
+    scanf("%d",&a);
+    printf("%d\n",-a);	
+}
+void compare()
+{
+    int a,b;
+    scanf("%d %d",&a,&b);
+    if(a<b)
+	printf("%d<%d\n",a,b);
+    else if(a==b)
+	printf("%d=%d\n",a,b);
+    else if(a>b)
+	printf("%d>%d\n",a,b);
+}
+void PI()
+{
+    printf("3.14\n");
+}
+
 
 int main(void)
 {
