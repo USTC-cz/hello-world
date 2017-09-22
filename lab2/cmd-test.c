@@ -1,3 +1,4 @@
+//版本二存在一点问题
 #include<stdlib.h>
 #include<stdio.h>
 #include<string.h>
