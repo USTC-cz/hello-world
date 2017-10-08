@@ -17,7 +17,7 @@ typedef struct DataNode
 	struct DataNode *next;
 }tDataNode;
 tDataNode *FindCmd(tDataNode *head,char *cmd);
-int ShowAllCmd(tDataNode);
+int ShowAllCmd(tDataNode *head);
 #endif
 
 
