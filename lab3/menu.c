@@ -27,13 +27,14 @@ static tDataNode menu[]=
 	{"hello","welcom infomation",hello,&menu[2]},
 	{"add","add two numbers",add,&menu[3]},
 	{"oppnum","output a oppsite number",oppnum,&menu[4]},
-	{"compare","compare two numbers",compare,&menu[5]}
+	{"compare","compare two numbers",compare,&menu[5]},
 	{"PI","const math number PI",PI,&menu[6]},
 	{"exit","exit the program",exit,NULL}
 };
  
  int main()
  {
+	 ShowAllCmd(menu);
 	 while(1)
 	 {
 		 char cmd[CMD_LEN];
