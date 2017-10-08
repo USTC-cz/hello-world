@@ -1,4 +1,6 @@
 #include<string.h>
+#include<stdlib.h>
+#include<stdio.h>
 #include"linklist.h"
 
 #define CMD_LEN 128
