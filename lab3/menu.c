@@ -56,7 +56,7 @@ static tDataNode menu[]=
  
  void help()
 {
-    printf("enter help [-commandname] for details\n");
+    printf("enter [-commandname] for details\n");
 }
 void hello()
 {
