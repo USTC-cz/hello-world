@@ -1,3 +1,13 @@
+/**********************************************************/
+/* Copyright (C) 2017 Caizhou.All rights reserved.        */
+/*                                                        */
+/* FILE NAME             : menu.c                         */
+/* AUTHOR                : Caizhou                        */
+/* LANGUAGE              : C                              */ 
+/**********************************************************/
+
+
+
 #include<string.h>
 #include<stdlib.h>
 #include<stdio.h>
