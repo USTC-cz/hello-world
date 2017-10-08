@@ -26,8 +26,9 @@ static tDataNode menu[]=
 	{"help","List all command in this program",help,&menu[1]},
 	{"hello","welcom infomation",hello,&menu[2]},
 	{"add","add two numbers",add,&menu[3]},
-	{"oppmun","output a oppsite number",oppnum,&menu[4]},
-	{"PI","const math number PI",PI,&menu[5]},
+	{"oppnum","output a oppsite number",oppnum,&menu[4]},
+	{"compare","compare two numbers",compare,&menu[5]}
+	{"PI","const math number PI",PI,&menu[6]},
 	{"exit","exit the program",exit,NULL}
 };
  
