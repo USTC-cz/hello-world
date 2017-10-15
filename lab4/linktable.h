@@ -1,7 +1,7 @@
 /**********************************************************/
 /* Copyright (C) 2017 Caizhou.All rights reserved.        */
 /*                                                        */
-/* FILE NAME             : linktable.h                     */
+/* FILE NAME             : linktable.h                    */
 /* AUTHOR                : Caizhou                        */
 /* LANGUAGE              : C                              */
 /**********************************************************/
