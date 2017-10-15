@@ -32,7 +32,7 @@ int AddLinkTableNode(myLinkTable *pLinkTable, myLinkTableNode *pNode);
 //删除LinkTable结点
 int DeleteLinkTableNode(myLinkTable *pLinkTable, myLinkTableNode *pNode);
 //获取头结点
-myLinkTableNode *GetLinkTableHead(myLinkTable *pLinkTable)；
+myLinkTableNode *GetLinkTableHead(myLinkTable *pLinkTable);
 //获取下一结点
 myLinkTableNode *GetNextLinkTableNode(myLinkTable *pLinkTable, myLinkTableNode *pNode);
 
