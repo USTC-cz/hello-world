@@ -25,8 +25,10 @@ typedef struct LinkTable
 
 //构建LinkTable
 myLinkTable *CreateLinkTable();
+//删除LinkTable
+int DeleteLinkTable(myLinkTable *pLinkTable);
 //增加LinkTable结点
-int AddLinkTableNode(myLinkTable *pLinkTable, myLinkTableNode* pNode);
+int AddLinkTableNode(myLinkTable *pLinkTable, myLinkTableNode *pNode);
 //删除LinkTable结点
 int DeleteLinkTableNode(myLinkTable *pLinkTable, myLinkTableNode *pNode);
 //获取头结点
