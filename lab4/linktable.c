@@ -45,7 +45,7 @@ int AddLinkTableNode(myLinkTable *pLinkTable, myLinkTableNode *pNode)
 		return FAILURE;
 	pNode->pNext=NULL;
 	if(pLinkTable->pHead==NULL)
-		pLinkTable=pNode;
+		pLinkTable->pHead=pNode;
 	if(pLinkTable->pTail=NULL)
 		pLinkTable->pTail=pNode;
 	else
