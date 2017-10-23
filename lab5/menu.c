@@ -134,21 +134,21 @@ int hello()
 int add()
 {
 	int a, b;
-	scanf_s("%d %d", &a, &b);
+	scanf("%d %d", &a, &b);
 	printf("%d\n", a + b);
 	return 0;
 }
 int oppnum()
 {
 	int a;
-	scanf_s("%d", &a);
+	scanf("%d", &a);
 	printf("%d\n", -a);
 	return 0;
 }
 int compare()
 {
 	int a, b;
-	scanf_s("%d %d", &a, &b);
+	scanf("%d %d", &a, &b);
 	if (a<b)
 		printf("%d<%d\n", a, b);
 	else if (a == b)
