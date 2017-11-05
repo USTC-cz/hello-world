@@ -104,6 +104,22 @@ while(1)
     }
 }
 }
+
+void getParam(int *argc,char *argv[],char *pcmd)
+{	
+	pcmd=strtok(pcmd," ");
+	while(pcmd!=NULL && *argc <CMD_MAX_ARGV_LEN)
+	{
+		argv[*argc]=pcmd;
+		(*argc++);
+		pcmd=strtok(NULL," ");
+	}
+	if(*argc==1)
+	{
+		int len=strlen(argv[0]);
+		*(argv[0]+len-1)='\0';
+	}
+}
 void Help(int argc, char *argv[])
 {
 ShowAllCmd(head);
