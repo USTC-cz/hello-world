@@ -16,6 +16,7 @@ void Version(int argc, char *argv[])
   printf("version7.0\n");
 }
 
+
 int main(int argc,char* argv[])
 {
   MenuConfig("version","Released Version 1.0(Menu program v7.0 inside)",NULL);
